@@ -195,6 +195,8 @@
   }
 }
 
+/*VERSO DESTRA*/
+
 .ex-13-button:hover .ex-13-top-white {
   animation: toright2 4s linear;
 }
@@ -223,5 +225,38 @@
   100% {
     left: 10%;
     top: -10px;
+  }
+}
+
+/*VERSO SINISTRA*/
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: toleft2 4s linear;
+}
+
+@keyframes toleft2 {
+  0% {
+    right: 20%;
+    bottom: -10px;
+  }
+  25% {
+    right: calc(100% - 30px);
+    bottom: -10px;
+  }
+  50% {
+    right: calc(100% - 30px);
+    bottom: 100%;
+  }
+  75% {
+    right: -30px;
+    bottom: 100%;
+  }
+  90% {
+    right: -30px;
+    bottom: -10px;
+  }
+  100% {
+    right: 20%;
+    bottom: -10px;
   }
 }
